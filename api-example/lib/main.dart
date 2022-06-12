@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 // import 'package:api_example/example_three.dart'; // Example 3
 // import 'package:api_example/example_four.dart'; // Example 4
 // import 'package:api_example/example_five.dart'; // Example 5
-import 'package:api_example/signup.dart'; // Example 6
+// import 'package:api_example/signup.dart'; // Example 6
+import 'package:api_example/upload_image.dart'; // Example 7
 
 void main() => runApp(const MyApp());
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SignUpScreen(),
+      home: const UploadImageScreen(),
     );
   }
 }

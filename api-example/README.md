@@ -7,6 +7,10 @@ https://github.com/axiftaj/Flutter-Rest-Api-Tutorials-With-Example
 
 ### Userful Resources
 
+Fake Store API  
+Fake store rest API for your e-commerce or shopping website prototype  
+https://fakestoreapi.com/
+
 Test your front-end against a real API:  
 https://reqres.in/
 
@@ -25,6 +29,11 @@ https://docs.flutter.dev/development/platform-integration/web-images
 
 Cross-Origin Resource Sharing (CORS)  
 https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#what_requests_use_cors
+
+## Packages
+
+https://pub.dev/packages/modal_progress_hud_nsn/  
+https://pub.dev/packages/image_picker
 
 ## Code snippets
 
