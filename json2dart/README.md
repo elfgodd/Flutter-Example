@@ -1,16 +1,21 @@
-# json2dart
+# json2Dart
 
-A new Flutter project.
+### Course Repo
 
-## Getting Started
+### Userful Resources
 
-This project is a starting point for a Flutter application.
+https://api.coingecko.com/api/v3/coins/bitcoin
 
-A few resources to get you started if this is your first Flutter project:
+## Packages
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+json_serializable:  
+Provides Dart Build System builders for handling JSON.  
+https://pub.dev/packages/json_serializable
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Code snippets
+
+**Code 1**
+
+```
+
+```
