@@ -7,6 +7,8 @@ import 'package:auth_one/page/home_page.dart';
 import 'package:auth_one/page/auth_page.dart';
 import 'package:auth_one/widget/login_widget.dart';
 import 'package:auth_one/widget/signup_widget.dart';
+import 'package:auth_one/page/verify_email_page.dart';
+import 'utils.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,6 +23,7 @@ final navigatorKey = GlobalKey<NavigatorState>();
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp(
+    scaffoldMessengerKey: Utils.messengerKey,
         navigatorKey: navigatorKey,
         debugShowCheckedModeBanner: false,
         title: 'Material App',
@@ -40,15 +43,29 @@ class MainPage extends StatelessWidget {
         body: StreamBuilder<User?>(
             stream: FirebaseAuth.instance.authStateChanges(),
             builder: (context, snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
-                return Center(child: CircularProgressIndicator());
-              } else if (snapshot.hasError) {
-                return Center(child: Text('Something went wrong!'));
-              } else if (snapshot.hasData) {
-                return HomePage();
+              if (snapshot.hasData) {
+                return VerifyEmailPage();
               } else {
                 return AuthPage();
               }
             }),
       );
 }
+
+  // @override
+  // Widget build(BuildContext context) => Scaffold(
+  //       backgroundColor: Colors.grey[600],
+  //       body: StreamBuilder<User?>(
+  //           stream: FirebaseAuth.instance.authStateChanges(),
+  //           builder: (context, snapshot) {
+  //             if (snapshot.connectionState == ConnectionState.waiting) {
+  //               return Center(child: CircularProgressIndicator());
+  //             } else if (snapshot.hasError) {
+  //               return Center(child: Text('Something went wrong!'));
+  //             } else if (snapshot.hasData) {
+  //               return VerifyEmailPage();
+  //             } else {
+  //               return AuthPage();
+  //             }
+  //           }),
+  //     )
