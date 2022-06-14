@@ -31,7 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.13.4
-  json_annotation: ^4.0.1
+  # json_annotation: ^4.0.1
+  json_annotation: ^4.3.0
 
 dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -42,8 +43,9 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  build_runner: ^2.0.4
-  json_serializable: ^4.1.3
+  build_runner: ^2.0.0
+  # json_serializable: ^4.1.3
+  json_serializable: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

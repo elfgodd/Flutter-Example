@@ -6,13 +6,11 @@ part of 'person.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Person _$PersonFromJson(Map<String, dynamic> json) {
-  return Person(
-    name: json['name'] as String,
-    creditCardNumber: json['creditCardNumber'] as String?,
-    birthday: DateTime.parse(json['birthday'] as String),
-  );
-}
+Person _$PersonFromJson(Map<String, dynamic> json) => Person(
+      name: json['name'] as String,
+      creditCardNumber: json['creditCardNumber'] as String?,
+      birthday: DateTime.parse(json['birthday'] as String),
+    );
 
 Map<String, dynamic> _$PersonToJson(Person instance) => <String, dynamic>{
       'name': instance.name,
